@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+body {
+  font-family: "Syne", sans-serif;
+  background-color: #595757;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+#header {
+  background-color: #ffffff38;
+  backdrop-filter: blur(10px);
+}
+
+#header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+#header .brand-logo a {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#header .brand-logo .dev,
+.project-name .dev {
+  color: #ff7b00;
+  margin-left: -8px;
+}
+
+#header .project-name {
+  color: #000000;
+  letter-spacing: -3px;
+}
+
+/* main */
+
+#main {
+  min-height: 80vh;
+}
+
+#main .to-do-title {
+  display: flex;
+  align-items: center;
+  margin-top: 80px;
+  gap: 20px;
+}
+
+.title
+{
+    color: #fff;
+}
+
+#main .view-to-do {
+  padding-bottom: 20px;
+}
+
+.get-to-do {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.get-to-do #enter-to-do:focus {
+  box-shadow: 0px 0px 5px 5px #ff7b00a3;
+}
+
+.get-to-do input {
+  width: 70%;
+  border: 2px solid #ff7b00;
+  outline: #ff7b00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 32px;
+}
+
+.get-to-do #add-to-do {
+  width: 30%;
+  background-color: #ff7b00;
+  color: #fff;
+  font-family: "Syne", sans-serif;
+  border: none;
+  outline: #ff7b00;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: 32px;
+  cursor: pointer;
+}
+
+.view-to-do .to-do-el {
+  font-size: 30px;
+  padding: 10px 20px;
+  background-color: #ff7b00;
+  margin-top: 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+  padding-right: 10px;
+  flex-direction: row-reverse;
+}
+
+.view-to-do .to-do-text {
+  position: relative;
+  /* color: #cccccc97; */
+}
+
+.done-task {
+  color: dimgray;
+  text-decoration: line-through;
+}
+
+.view-to-do img {
+  cursor: pointer;
+}
+
+.icon-box img:first-child {
+  margin-right: 10px;
+}
+
+/* footer */
+#footer {
+  background-color: #b0b0b0a2;
+  backdrop-filter: blur(10px);
+}
+
+#footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+#footer .brand-logo a,
+.year {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#footer .brand-logo .dev {
+  color: #ff7b00;
+  margin-left: -8px;
+}
+
+/* media query */
+
+@media screen and (max-width: 1460px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 90%;
+  }
+
+  #header {
+    width: 100%;
+  }
+
+  #header .brand-logo {
+    display: none;
+  }
+}

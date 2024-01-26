@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <div id="header">
+            <div class="container">
+                <div class="brand-logo">
+                    <a>joxa <span class="dev">Dev</span></a>
+                </div>
+                <h1 class="project-name">TO DO <span class="dev">LIST</span></h1>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="container">
+                <div class="to-do-title">
+                    <h1 class="title">Are you ready, New Goals and New Milestones!!</h1>
+                    <img src="https://cdn3d.iconscout.com/3d/premium/thumb/goal-7322298-5938245.png?f=webp" alt="Goals" width="250" height="250">
+                </div>
+                    <div class="get-to-do">
+                        <input id="enter-to-do" type="search" placeholder="Yangi vazifa kiriting">
+                        <button id="add-to-do" onclick="addListItem()"> ADD </button>
+                    </div>
+                    <div class="view-to-do">
+                        <ul class="to-dos">
+                        </ul>
+                    </div>
+            </div>
+        </div>
+
+        <!-- <div id="footer">
+            <div class="container">
+                <div class="brand-logo">
+                    <a>joxa <span class="dev">Dev</span></a>
+                </div>
+                <span class="year">2024</span>
+            </div>
+        </div> -->
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
