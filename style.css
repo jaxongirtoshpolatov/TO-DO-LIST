@@ -63,9 +63,8 @@ body {
   gap: 20px;
 }
 
-.title
-{
-    color: #fff;
+.title {
+  color: #fff;
 }
 
 #main .view-to-do {
@@ -158,6 +157,12 @@ body {
 #footer .brand-logo .dev {
   color: #ff7b00;
   margin-left: -8px;
+}
+
+.danger {
+  color: red;
+  font-size: 18px;
+  font-family: "Syne", sans-serif;
 }
 
 /* media query */

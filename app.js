@@ -50,6 +50,9 @@ function addListItem() {
   let inputValue = toDoItemText.value;
   if (toDoItemText && inputValue) {
     parent.appendChild(createListItem);
+  } else {
+    let danger = document.querySelector("#danger");
+    danger.innerHTML = "Iltimos matn kiriting";
   }
 
   toDoItemText.value = "";
