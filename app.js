@@ -53,6 +53,9 @@ function addListItem() {
   } else {
     let danger = document.querySelector("#danger");
     danger.innerHTML = "Iltimos matn kiriting";
+    setInterval(() => {
+      danger.innerHTML = "";
+    }, 2500);
   }
 
   toDoItemText.value = "";
